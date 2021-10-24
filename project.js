@@ -23,14 +23,18 @@ let novels = [
 
 const render = () => {
   novels.forEach((item, i) => {
-    $(".cards").append(` <div class="parts">   
-    <img src='${item.img}'  />
+    $(".cards").append(` <div class="parts"> 
+ <img src='${item.img}'/>
     <h1>${item.name}</h1>
     <p>${item.description}</p>
     <button>${item,"Read"} </button>
+    
     </div>`);
   });
 }
 
 render();
+
+
+
 

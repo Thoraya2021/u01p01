@@ -23,7 +23,7 @@ let novels = [
 
 const render = () => {
   novels.forEach((item, i) => {
-    $(".cards").append(` <div class="parts"> 
+    $(".cards").append(` <div onclick='seeMor(${i})' class="parts"> 
  <img src='${item.img}'/>
     <h1>${item.name}</h1>
     <p>${item.description}</p>
@@ -33,8 +33,22 @@ const render = () => {
   });
 }
 
+
 render();
 
 
+// $("button").click(() => {         
+
+//  renderList();
+//   });
 
 
+function seeMor(i){
+    console.log( novels[i]);
+    $(".cards").hide()
+   $(".oneItem").append(` <img src='${novels[i].img}'/>
+   <h1>${novels[i].name}</h1>
+   <p>${novels[i].description}</p>`)
+
+
+}

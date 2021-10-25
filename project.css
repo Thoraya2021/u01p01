@@ -83,4 +83,8 @@ body {
         height: 20%;
         margin-bottom: 10px ;
     }    
+ .container{
+  background-color: rgb(230, 226, 221);
+  box-sizing: content-box;
  
+ }

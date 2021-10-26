@@ -24,6 +24,7 @@ body {
     background-color: #333;
     display: flex;
     justify-content:space-around;
+    list-style: none;
     
 
     
@@ -35,7 +36,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     float: left;
-    font-size: 25px;
+    font-size: 35px;
   }
   
   .nav a:hover {
@@ -48,9 +49,18 @@ body {
         color: white;
   }
 
-
-  
-
+  #searchbar {
+    border: 1px solid rgb(219, 97, 97);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: rgb(230, 226, 221);
+    display: flex;
+    justify-items: center;
+  }
 
 
   
@@ -83,8 +93,21 @@ body {
         height: 20%;
         margin-bottom: 10px ;
     }    
- .container{
-  background-color: rgb(230, 226, 221);
-  box-sizing: content-box;
- 
+ .container {
+    margin-top: 5rem;
+    margin-left: 18rem;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(250, 107, 107);
+    background-color: rgb(230, 226, 221);
+    border-radius: 2rem;
+    box-shadow: 2px 2px 30px 8px rgb(229, 203, 170);
  }
+  ​
+
+  
+  

@@ -93,7 +93,27 @@ body {
         height: 20%;
         margin-bottom: 10px ;
     }    
- .container {
+        .contact {
+   
+          margin-top: 5rem;
+          margin-left: 18rem;
+          width: 60%;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 26px;
+          color: rgb(197, 58, 58);
+          background-color: rgb(230, 226, 221);
+          border-radius: 2rem;
+          box-shadow: 2px 2px 30px 8px rgb(92, 88, 84);
+ }
+          
+
+  .para{
+  
+
     margin-top: 5rem;
     margin-left: 18rem;
     width: 50%;
@@ -102,12 +122,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(250, 107, 107);
+    font-size: 26px;
+    color: rgb(197, 58, 58);
     background-color: rgb(230, 226, 221);
     border-radius: 2rem;
-    box-shadow: 2px 2px 30px 8px rgb(229, 203, 170);
+    box-shadow: 2px 2px 30px 8px rgb(92, 88, 84);
  }
-  ​
-
-  
   

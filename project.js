@@ -19,6 +19,10 @@ let novels = [
       "AuthorHarper Lee ATOS reading level5.60 First publishedJul 11, 1960 AdaptationsTo Kill a Mockingbird (1962)·",
     img: "https://th.bing.com/th/id/OIP.FlCDOhM6yGlghOeaDZnn_gHaLj?pid=ImgDet&rs=1",
   },
+
+  {name:"The Grapes of Wrath"  ,
+  description:"Author:John Steinbeck  ATOS reading level 4.90 First publishedApr 14, 1939 AdaptationsThe Grapes of Wrath (1940) · The Grapes of Wrath (1988)",
+img:"https://th.bing.com/th/id/R.7ab14ea91f756f1a5ac276132c512a32?rik=wk1yPQx%2bMAUP9g&riu=http%3a%2f%2fww1.prweb.com%2fprfiles%2f2014%2f05%2f15%2f11858905%2fthe-grapes-of-wrath-original-dustjacket.jpg&ehk=34ja2%2fAVAMx4h7SNDm4Si1D9uzenVu0VarztVkPorw0%3d&risl=&pid=ImgRaw&r=0"}
 ];
 
 const render = () => {
@@ -74,3 +78,29 @@ function seeMor(i){
     });
     });
    
+
+
+    let news = [{
+        name: "And Then There Were none",
+        description:
+          "Author: Agatha Christie First publishedNov 06, 1939        ",
+        img: "https://th.bing.com/th/id/R.1ddfceb46d50ec413925d150b31d735c?rik=qiptUaLx33O9GQ&riu=http%3a%2f%2ffilmmusicreporter.com%2fwp-content%2fuploads%2f2016%2f03%2fand-then-there-were-none.jpg&ehk=%2fbquRV%2fHv4HAQM8J8bEuYQWXnQs81WHpNdKTeM0b0UI%3d&risl=&pid=ImgRaw&r=0"},
+        {name: "One Hundred Years Solitude ",
+          description:"Author: Gabriel García Márquez  Genre: Magic realism Adaptations: 100 Years of Solitude (1981)",
+        img:"https://cdn2.penguin.com.au/covers/original/9780241968581.jpg" }
+];
+      const newnovel = () => {
+        news.forEach((item, i) => {
+          $(".new").append(` <div onclick='seeMor(${i})' class="parts"> 
+       <img src='${item.img}'/>
+          <h1>${item.name}</h1>
+          <p>${item.description}</p>
+          <button>${item,"Read"} </button>
+          
+          </div>`);
+        });
+      }
+      
+      
+      newnovel();
+      

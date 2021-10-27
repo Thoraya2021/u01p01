@@ -58,8 +58,34 @@ body {
   width: 22%;
   padding: 0%;
   border: 1px solid grey;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: rgb(197, 58, 58);
+  background-color: rgb(230, 226, 221);
+  border-radius: 2rem;
+  box-shadow: 2px 2px 30px 8px rgb(92, 88, 84);
 
+}
+.seeMor{
+  float:inline-end;
+background-color: rgb(226, 111, 111);
+padding: 5px 25px;
+border: 1px solid rgb(226, 111, 111);
+color: white;
+border-radius: 5px;
+
+}
+.add{
+  float:inline-end;
+  margin-top: 6px;
+background-color: rgb(226, 111, 111);
+padding: 5px 25px;
+border: 1px solid rgb(226, 111, 111);
+color: white;
+border-radius: 5px;}
 .parts div {
   width: 100%;
   height: 500px;
@@ -68,6 +94,7 @@ body {
 .parts div img {
   width: 100%;
   height: 100%;
+  
 }
 
 
@@ -77,24 +104,31 @@ body {
   justify-content: center;
   background-color: rgb(230, 226, 221);
   gap: 10px ;
+
 }
 
  
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
 .newimg {
   width: 35%;
-  padding: 0%;
-  border: 1px solid grey;
 }
 
-.newimg div {
-  width: 70%;
-  height: 300px;
+.newsDivImg {
+  width: 100%;
+  height: 500px
 }
 
-.newimg div img {
-  width: 50%;
-  height: 50%
+.newsDivImg img {
+  width: 100%;
+  height: 100%;
 }
+
 
 .news {
   display: flex;

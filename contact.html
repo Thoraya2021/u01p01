@@ -12,7 +12,7 @@
 <body>
 
     <ul class="nav">
-        <li class="active"><a href="http://127.0.0.1:5500/project.html">Home</a> </li>
+        <li ><a href="http://127.0.0.1:5500/project.html">Home</a> </li>
         <li><a href="http://127.0.0.1:5500/newnovels.html">New Novels</a></li>
         <li><a href="http://127.0.0.1:5500/about.html">About </a></li>
         <li class="active"> <a href="http://127.0.0.1:5500/contact.html">Contact us</a>
@@ -24,18 +24,20 @@
         <h1>Contact Us</h1>
         
         <hr>
-        <label for="fname">First Name</label>
+        <label for="fname"></label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
+        <br>
+        <label for="lname"></label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="email"><b>Email</b></label>
+        <br>
+        <label for="email"></label>
         <input type="text" placeholder="Enter Email" name="email" required>
         <br>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <textarea id="message" name="message" placeholder="Write message.."style="height:300px" ></textarea>
           <br>
-          <button type="submit" class="signupbtn">Send</button>
+          <button type="submit" class="send">Send</button>
         </div>
-
+        <div class="footer">   <p>2021© Novels Online</p>  </div>
 
         <script src='project.js'></script>
     

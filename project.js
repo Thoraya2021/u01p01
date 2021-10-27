@@ -22,13 +22,14 @@ let novels = [
 
   {name:"The Grapes of Wrath"  ,
   description:"Author:John Steinbeck  ATOS reading level 4.90 First publishedApr 14, 1939 AdaptationsThe Grapes of Wrath (1940) · The Grapes of Wrath (1988)",
-img:"https://th.bing.com/th/id/R.7ab14ea91f756f1a5ac276132c512a32?rik=wk1yPQx%2bMAUP9g&riu=http%3a%2f%2fww1.prweb.com%2fprfiles%2f2014%2f05%2f15%2f11858905%2fthe-grapes-of-wrath-original-dustjacket.jpg&ehk=34ja2%2fAVAMx4h7SNDm4Si1D9uzenVu0VarztVkPorw0%3d&risl=&pid=ImgRaw&r=0"}
+img:"https://th.bing.com/th/id/R.7ab14ea91f756f1a5ac276132c512a32?rik=wk1yPQx%2bMAUP9g&riu=http%3a%2f%2fww1.prweb.com%2fprfiles%2f2014%2f05%2f15%2f11858905%2fthe-grapes-of-wrath-original-dustjacket.jpg&ehk=34ja2%2fAVAMx4h7SNDm4Si1D9uzenVu0VarztVkPorw0%3d&risl=&pid=ImgRaw&r=0"},
+
 ];
 
 const render = () => {
   novels.forEach((item, i) => {
     $(".cards").append(` <div onclick='seeMor(${i})' class="parts"> 
- <img src='${item.img}'/>
+     <div><img src='${item.img}'/></div>
     <h1>${item.name}</h1>
     <p>${item.description}</p>
     <button>${item,"Read"} </button>
@@ -39,13 +40,6 @@ const render = () => {
 
 
 render();
-
-
-// $("button").click(() => {         
-
-//  renderList();
-//   });
-
 
 function seeMor(i){
     console.log( novels[i]);
@@ -63,8 +57,10 @@ function seeMor(i){
 //$(".readnov").append(`<p>${readnovel[i].read}</p>`
 //});
 
- 
 
+
+ 
+   //search bar
    $('#searchbar').on(function() {
     let value=$(this).val().toLowerCase();
     $(".header").each(function(){
@@ -79,7 +75,7 @@ function seeMor(i){
     });
    
 
-
+   //new novels page
     let news = [{
         name: "And Then There Were none",
         description:
@@ -89,9 +85,11 @@ function seeMor(i){
           description:"Author: Gabriel García Márquez  Genre: Magic realism Adaptations: 100 Years of Solitude (1981)",
         img:"https://cdn2.penguin.com.au/covers/original/9780241968581.jpg" }
 ];
+
+
       const newnovel = () => {
         news.forEach((item, i) => {
-          $(".new").append(` <div onclick='seeMor(${i})' class="parts"> 
+          $(".news").append(` <div onclick='seeMor(${i})' class="newimg"> 
        <img src='${item.img}'/>
           <h1>${item.name}</h1>
           <p>${item.description}</p>
@@ -100,7 +98,16 @@ function seeMor(i){
           </div>`);
         });
       }
-      
-      
+
       newnovel();
       
+
+
+
+
+      //send button
+      $(document).ready(function(){
+     $(".send").click(function(){
+       $("input[type='submit'], button").val();
+     })
+      });
